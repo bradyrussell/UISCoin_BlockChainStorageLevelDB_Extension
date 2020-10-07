@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: leveldb-0.12.jar leveldb-api-0.12.jar guava-21.0.jar UISCoin
+ .jar
+

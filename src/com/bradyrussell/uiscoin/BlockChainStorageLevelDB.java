@@ -1,4 +1,4 @@
-package com.bradyrussell.uiscoin.miner;
+package com.bradyrussell.uiscoin;
 
 import com.bradyrussell.uiscoin.Hash;
 import com.bradyrussell.uiscoin.Util;
