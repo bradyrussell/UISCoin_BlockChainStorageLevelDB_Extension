@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.iq80.leveldb:leveldb:0.12" type="repository">
+    <properties maven-id="org.iq80.leveldb:leveldb:0.12" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/iq80/leveldb/leveldb/0.12/leveldb-0.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/iq80/leveldb/leveldb-api/0.12/leveldb-api-0.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="UISCoin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../UISCoinNode/out/artifacts/UISCoin_jar/UISCoin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

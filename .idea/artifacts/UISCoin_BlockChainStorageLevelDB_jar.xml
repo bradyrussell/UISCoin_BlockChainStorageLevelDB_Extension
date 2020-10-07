@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UISCoin_BlockChainStorageLevelDB:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UISCoin_BlockChainStorageLevelDB_jar</output-path>
+    <root id="archive" name="UISCoin_BlockChainStorageLevelDB.jar">
+      <element id="module-output" name="UISCoin_BlockChainStorageLevelDB" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/iq80/leveldb/leveldb/0.12/leveldb-0.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/iq80/leveldb/leveldb-api/0.12/leveldb-api-0.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../UISCoinNode/out/artifacts/UISCoin_jar/UISCoin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
