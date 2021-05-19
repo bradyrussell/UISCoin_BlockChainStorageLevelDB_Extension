@@ -1,7 +1,5 @@
 package com.bradyrussell.uiscoin;
 
-import com.bradyrussell.uiscoin.Hash;
-import com.bradyrussell.uiscoin.Util;
 import com.bradyrussell.uiscoin.blockchain.BlockChainStorageBase;
 import com.bradyrussell.uiscoin.transaction.Transaction;
 import org.iq80.leveldb.*;
@@ -53,7 +51,7 @@ public class BlockChainStorageLevelDB extends BlockChainStorageBase {
             BlockHeight = buf.getInt();
             buf.get(HighestBlockHash);
 
-            System.out.println("Loaded blockchain " + (BlockHeight + 1) + " blocks long. Last block: " + Util.Base64Encode(HighestBlockHash));
+            System.out.println("Loaded blockchain " + (BlockHeight + 1) + " blocks long. Last block: " + BytesUtil.Base64Encode(HighestBlockHash));
         }
 
         mempool = new ArrayList<>();
@@ -130,25 +128,25 @@ public class BlockChainStorageLevelDB extends BlockChainStorageBase {
 
     @Override
     public byte[] get(byte[] bytes, String s) {
-        byte[] key = Util.ConcatArray(Hash.getSHA512Bytes(s), bytes);
+        byte[] key = BytesUtil.ConcatArray(Hash.getSHA512Bytes(s), bytes);
         return db.get(key);
     }
 
     @Override
     public void put(byte[] bytes, byte[] bytes1, String s) {
-        byte[] key = Util.ConcatArray(Hash.getSHA512Bytes(s), bytes);
+        byte[] key = BytesUtil.ConcatArray(Hash.getSHA512Bytes(s), bytes);
         db.put(key,bytes1);
     }
 
     @Override
     public void remove(byte[] bytes, String s) {
-        byte[] key = Util.ConcatArray(Hash.getSHA512Bytes(s), bytes);
+        byte[] key = BytesUtil.ConcatArray(Hash.getSHA512Bytes(s), bytes);
         db.delete(key);
     }
 
     @Override
     public boolean exists(byte[] bytes, String s) {
-        byte[] key = Util.ConcatArray(Hash.getSHA512Bytes(s), bytes);
+        byte[] key = BytesUtil.ConcatArray(Hash.getSHA512Bytes(s), bytes);
         return db.get(key) != null;
     }
 
